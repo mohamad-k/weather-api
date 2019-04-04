@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>JSON and AJAX</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header><h1>Weather App</h1></header>
+    <div class="bg-light main-div">
+      <div class=" m-auto">
+        <form id="form">
+          <input class="form-control" type="text" id="input">
+          <button class="btn btn-primary mt-3" type="submit" id="btn-input">Submit</button>
+        </form>
+      </div>
+      <div class="city">
+        <h2 id="locate"></h2>
+        <b id="deg"></b>
+      </div>
+      <div class="details text-center">
+        <div class="wind">
+          <h3>Wind-Speed</h3>
+          <hr class="mt-0" />
+          <h2 id="speed"></h2>
+        </div>
+        <div class="humidity">
+          <h3>Humidity</h3>
+          <hr class="mt-0" />
+          <h2 id="humi"></h2>
+        </div>
+        <div class="desc">
+          <h3>Description</h3>
+          <hr class="mt-0" />
+          <h2 id="disco"></h2>
+        </div>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
